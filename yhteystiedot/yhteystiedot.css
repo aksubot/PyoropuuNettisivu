@@ -1,0 +1,214 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', Helvetica, Arial, sans-serif;
+
+    overflow-y:initial;
+}
+
+/* https://coolors.co/272727-4c404f-9bc995-157a6e-57c4e5 */
+
+/* https://coolors.co/272727-eb5e28-53dd6c-ffffff-57c4e5 parempi*/
+
+/* https://coolors.co/323b2d-80986c-a1ba8e-e1e1e1-ffffff nykyinen */
+
+/*kopioi metsuri nettisivu !!!!!!!!!!!!!!!!!!! */
+
+/*#region HIDDEN AND SHOW  */
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-20%);
+    filter: blur(8px);
+    transition: opacity 0.5s, transform 0.5s, filter 1s;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0px);
+    filter: blur(0px);
+}
+/* #endregion */
+
+body{
+    overflow-x: hidden;
+    overflow-x: clip !important;
+
+    min-width: 320px;
+
+    background-color: #b9dda1;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: #000000;
+    color: #333333;
+    top: 0;
+    left: -100vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+    display: flex;
+
+    padding-top: 200px;
+
+    cursor: pointer;
+
+    display: none;
+}
+
+.overlay-is-active{
+    opacity: 0.3;
+    visibility: visible;
+
+    display: block;
+}
+
+
+/* #region YHT. TIEDOT */
+
+.yhteystiedot{
+    background-color: #b9dda1;  
+    margin-top: 100px;
+    /* background-image: linear-gradient(to bottom,#fff 0%, rgb(121, 121, 121) 100%); */
+    height: calc(100vh - 200px);
+}
+
+.ytCont{
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+.row, .row0, .row1, .row2, .row3, .row4{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    text-align: left;
+}
+
+.card1, .card2, .card3{
+    border: #cccccc 2px solid;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: #aeaeae 0 0 10px;
+    background-image: linear-gradient(to right bottom, #eee 0%, #ffffff 100%);
+
+    min-width: 362px;
+}
+
+.card3{
+    margin-bottom: 0;
+}
+
+.ytCont h1{
+    text-align: center;
+    margin-bottom: 15px;
+
+
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+
+    text-decoration: none;
+
+    font-family: "Karla", serif;
+
+
+    color: #292929;
+}
+
+h3{
+    font-weight: 200;
+    font-style: bold;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+
+    color: #323b2d;
+}
+
+.row0 {
+    margin: auto;
+}
+
+.row1{
+    margin: auto;
+}
+
+.yhteystiedot h2{
+    color: #323b2d;
+
+    font-family: "Karla", serif;
+    font-weight: 400;
+    font-style: bold;
+
+    margin-bottom: 20px;
+}
+
+i{
+    margin: 20px 0;
+    font-size: 25px;
+    color: #323b2d;
+    width: 20px;
+}
+
+p{
+    font-size: clamp(0.5rem, 5vw, 1.25rem);
+
+    font-family: "Karla", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-left: 20px;
+
+    color: #80986c;
+
+    /* text-shadow: 0px 0px 1px #e3e3e3; */
+}
+
+@media (max-width: 1024px){
+    .row0{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 520px){
+    .ytCont{
+        width: 90%;
+    }
+
+    .card1, .card2, .card3{
+        min-width: 0px;
+        margin: 20px 0;
+    }
+
+    i{
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 340px){
+    .ytCont{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    .ytCont h1{
+        font-size: 40px;
+    }
+}
+
+
+
+
+/* #endregion */
+
