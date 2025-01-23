@@ -1,0 +1,515 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', Helvetica, Arial, sans-serif;
+
+    overflow-y:initial;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 15vh;
+}
+
+/* https://coolors.co/272727-4c404f-9bc995-157a6e-57c4e5 */
+
+/* https://coolors.co/272727-eb5e28-53dd6c-ffffff-57c4e5 parempi*/
+
+/* https://coolors.co/323b2d-80986c-a1ba8e-e1e1e1-ffffff nykyinen */
+
+/*kopioi metsuri nettisivu !!!!!!!!!!!!!!!!!!! */
+
+/*#region HIDDEN AND SHOW  */
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-10%);
+    filter: blur(5px);
+    transition: opacity 0.3s, transform 0.3s, filter 0.5s;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0px);
+    filter: blur(0px);
+}
+/* #endregion */
+
+body{
+    overflow-x: hidden;
+    overflow-x: clip !important;
+    background-color: #c4d9b6;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: #000000;
+    color: #333333;
+    top: 0;
+    left: -100vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+    display: flex;
+
+    padding-top: 200px;
+
+    cursor: pointer;
+
+    display: none;
+}
+
+.overlay-is-active{
+    opacity: 0.3;
+    visibility: visible;
+
+    display: block;
+}
+
+
+.items{
+    background-color: #b9dda1;
+}
+
+/* #region FIRST AND PARAGRAPHS AND ALL ELSE */
+
+.first{
+    padding-top: 70px;
+    background-color: #b9dda1;
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+    width: 100%;
+    margin: auto;
+
+    align-items: center;
+}
+
+.first h1{
+    text-align: center;
+
+
+    font-weight: 600;
+    font-style: normal;
+    font-size: 70px;
+
+    text-decoration: none;
+
+    font-family: "Karla", serif;
+
+
+    color: #292929;
+
+    margin: 30px 0;
+
+    text-shadow: 0px 0px 2px #9f9f9f;
+
+    width: 100%;
+}
+
+.first hr{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 30px;
+    /* color: #000000; */
+}
+
+.btns{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    height: fit-content;
+    flex-direction: column;
+
+    /* padding: 30px 20px;
+    box-shadow: #aeaeae 0 0 10px;
+    background-image: linear-gradient(to right bottom, #fff 0%, #ffffff 100%);
+    border-radius: 5px;
+    border: #cccccc 2px solid; */
+
+    margin: 0;
+}
+
+.btns h2{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+
+    text-decoration: none;
+
+    font-family: "Karla", serif;
+
+
+    color: #292929;
+
+    margin: 20px 0;
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.btnsCont{
+    display: flex;
+
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1150px){
+    .btnsCont{
+        flex-wrap: wrap;
+    }
+}
+
+.btns button{
+    background-color: #8fb96e;
+    color: #ffffff;
+    border: transparent;
+    border-radius: 5px;
+    transition: padding 0.2s ease;
+    width: fit-content;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    width: 250px;
+    height: 70px;
+    margin: 10px 10px;
+
+    transition: transform 0.2s ease;
+
+    font-family: "Karla", serif;
+}
+
+.btns button:hover{
+    transform: translateY(-5px);
+}
+
+
+.item{
+    margin: auto;
+    margin-bottom: 10vh;
+    width: 70vw;
+}
+
+.img{
+    width: 50%;
+
+    margin: 20px;
+
+    position: relative;
+
+    border-radius: 10px;
+}
+
+.img img{
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    max-height: 45vh;
+    max-width: 90%;
+}
+
+.text{
+    width: 50%;
+    height: fit-content;
+    padding-bottom: 20px;
+}
+
+.text h2{
+    margin: 10px 0;
+
+    font-family: "Karla", serif;
+    font-weight: 600;
+    font-style: bold;
+
+    font-size: max(inherit, 100%, 50vw);
+
+
+    color: #a1ba8e;
+
+    width: 100%;
+
+}
+
+.text p{
+    font-family: "Karla", serif;
+    line-height: 1.7rem;
+    letter-spacing: 0.7px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* #endregion */
+
+.itemContSwitch{
+    display: none;
+    height: fit-content;
+}
+
+.itemCont, .itemContSwitch{
+    display: flex;
+    height: fit-content;
+
+
+    /* border: #a1ba8e 3px solid;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: #aeaeae 0 0 8px;
+    background-image: linear-gradient(to right bottom, #fff 0%, #ffffff 100%); */
+
+    margin: 40px;
+
+    flex-wrap: nowrap;
+}
+
+/* @keyframes scrollScale{
+    0%{
+        scale: 0.9;
+    }
+
+    50%{
+        scale: 1;
+    }
+
+    100%{
+        scale: 0.9;
+    }
+} */
+
+.item{
+    animation: scrollScale linear;
+    animation-timeline: view();
+}
+
+
+
+@media (max-width: 900px){
+
+    .text{
+        width: 100%;
+    }
+
+    .img{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .itemContSwitch .img img, .itemCont .img img{
+        margin: auto;
+        transform: translateY(0px);
+    }
+
+    .itemContSwitch{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .itemCont{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /*.itemContSwitch, .itemContNoSwitch{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+    }*/
+}
+
+.hinnat{
+    text-align: center;
+}
+
+/* #region DROPDOWN */
+
+.dropdown{
+    border: transparent;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: block;
+    width: 100%;
+
+    text-align: center;
+
+    position: relative;
+
+    color: #80986c;
+
+    margin: 20px 0;
+
+}
+
+.btn{
+    width: fit-content;
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    font-family: "Karla", serif;
+}
+
+.triangle{
+    width: 0; height: 0; border-left: 8px solid transparent; 
+    border-right: 8px solid transparent; 
+    border-top: 15px solid #80986c;
+
+    position: relative;
+
+    
+
+    margin-left: 8px;
+}
+
+/* #endregion */
+
+.hinnatCont3{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.hinnatCont2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 10px;
+
+
+}
+
+.hinnatSwitch{
+    display: none;
+}
+
+/* #region  HINNAT TAVARAA */
+
+hr{
+    margin: 4px 0;
+}
+
+.card{
+    /* border: #a1ba8e 3px solid; */
+    border: #cccccc 2px solid;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: #aeaeae 0 0 15px; 
+    background-image: linear-gradient(to right bottom, #fff 0%, #ffffff 100%);
+}
+
+h3{
+    margin: 0 5px;
+    font-size: large;
+    word-break: break-word;
+
+    font-family: "Karla", serif;
+}
+
+p{
+    margin: 3px 0;
+    
+
+    /* font-family: "Karla", serif; */
+}
+
+.flip{
+    border: none;
+    width: 0; height: 0; border-left: 8px solid transparent; 
+    border-right: 8px solid transparent; 
+    border-bottom: 15px solid #80986c;
+}
+
+/* #endregion */
+
+.hinnatCont3, .hinnatCont2{
+    display: none ;
+}
+
+.dropdown-active{
+    display: grid;
+}
+
+@media (max-width: 1050px){
+    .item{
+        width: 80vw;
+    }
+}
+
+@media (max-width:940px){
+    .item{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 760px){
+
+    .hinnatCont2, .hinnatCont3{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px){
+    h3{
+        margin: 0;
+        font-size: medium;
+    }
+
+    .hinnatCont3{
+        padding: 0;
+    }
+}
+
+@media (max-width: 520px){
+    .card{
+        margin: 0 5px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        box-shadow: none;
+    }
+
+    .item{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    h3{
+        font-size: small;
+    }
+
+    p{
+        font-size: small;
+    }
+
+     .img img{
+        width: 100%;
+     }
+}
