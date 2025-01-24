@@ -1,0 +1,688 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', Helvetica, Arial, sans-serif;
+
+    overflow-y:initial;
+}
+
+/* https://coolors.co/272727-4c404f-9bc995-157a6e-57c4e5 */
+
+/* https://coolors.co/272727-eb5e28-53dd6c-ffffff-57c4e5 parempi*/
+
+/* https://coolors.co/323b2d-80986c-a1ba8e-e1e1e1-ffffff nykyinen */
+
+/*kopioi metsuri nettisivu !!!!!!!!!!!!!!!!!!! */
+
+/*#region HIDDEN AND SHOW  */
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-10%);
+    filter: blur(5px);
+    transition: opacity 0.3s, transform 0.3s, filter 0.5s;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0px);
+    filter: blur(0px);
+}
+/* #endregion */
+
+body{
+    overflow-x: hidden;
+    overflow-x: clip !important;
+
+    min-width: 320px;
+
+    background-color: #b9dda1;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: #000000;
+    color: #333333;
+    top: 0;
+    left: -100vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+    display: flex;
+
+    padding-top: 200px;
+
+    cursor: pointer;
+
+    display: none;
+}
+
+.overlay-is-active{
+    opacity: 0.3;
+    visibility: visible;
+
+    display: block;
+}
+
+
+/*#region FIRST*/	
+
+.first{
+    z-index: 1;
+    background-color: #b9dda1;
+    margin-top: 100px;
+}
+
+.first h1{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 75px;
+
+    text-decoration: none;
+
+    font-family: "Karla", serif;
+
+
+    color: #292929;
+    text-align: center;
+}
+
+.firstCont{
+    display: flex;
+    min-height: 80vh;
+    padding-bottom: 50px;
+}
+
+/* .firstCont::after{
+    content: "";
+    width:80vw;
+    height: 70vh;
+    border-bottom-right-radius: 50% 100%;
+    background-color: #e8e8e8;
+    position: absolute;
+    z-index: 1;
+    background-image: url("/pictures/GIMPtree.png");
+    background-repeat: repeat;
+    background-size: 130px;
+} */
+
+.firstCont .text{
+    z-index: 2;
+    width: fit-content;
+    height: 100%;
+    max-width: 50%;
+    margin: auto;
+}
+
+.textCont{
+    height: fit-content;
+    margin: auto;
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 100px;
+}
+
+.textCont h1{
+
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+
+    text-decoration: none;
+
+    font-family: "Karla", serif;
+
+
+    color: #292929;
+    text-align: left;
+
+    text-wrap:  balance;
+}
+
+.textCont p{
+    width: 100%;
+    color: #292929;
+    text-align: left;
+    margin: 20px 0;
+    line-height: 23px;
+    font-family: "Karla", serif;
+    font-size: 23px;
+}
+
+.firstImg{
+    width: 50%;
+    display: flex;
+    z-index: 3;
+    margin: auto 0;
+    margin-right: 20px;
+}
+
+.roundCorners{
+    width: 90%;
+    margin:  auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.firstImg img{
+    width: 100%;
+}
+
+.firstCont .text .textCont button{  
+    width: fit-content;
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: none;
+}
+
+.firstCont .text .textCont button:hover{
+    transform: translateY(-10px);
+}
+
+.firstCont .text .textCont .btn1{
+    background-color: #a1ba8e;
+    color: #ffffff;
+    border: transparent;
+    padding: 14px 26px;
+    border-radius: 40px;
+    transition: all 0.2s ease;
+}
+
+
+
+
+@media(max-width:1060px){
+    .textCont h1{
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .first{
+        margin-top: 70px;
+    }
+
+    .firstCont{
+        height: calc(100vh-70px);
+        background-position-y: 50% 0%;
+        background-position-x: auto;
+        margin-top: 0;
+    }
+
+    .textCont h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 800px){
+
+    .firstCont .text{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        height: fit-content;
+        margin: 40px auto;
+        max-width: max-content;
+    }
+    .textCont h1{
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .text p{
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .firstCont{
+        flex-direction: column;
+    }
+
+    
+    /* .firstCont .text{
+        padding: 0px 10px;
+        margin: 3vw;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 100%;
+    } */
+
+    .firstImg{
+        width: 100%;
+    }
+
+    .roundCorners{
+        width: 70%;
+        margin: auto;
+    }
+
+    .textCont{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .textCont h1{
+        font-size: 60px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        line-height: 60px;
+    }
+    
+    .firstCont .text .textCont p{
+        font-size: 15px;
+        text-align: center;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 700px){
+    
+}
+
+@media (max-width: 620px){
+    .roundCorners{
+        width: 90%;
+    }
+}
+
+@media (max-width: 460px){
+    .textCont h1{
+        font-size: 40px;
+        word-wrap: break-word;
+    }
+
+
+}
+
+/* @media (min-width: 1330px){
+    .firstCont .text{
+        padding-left: 20%;
+    }
+} */
+
+/*#endregion*/
+
+/* #region SECOND */
+
+.second{
+    width: 100%;
+}
+
+.secondCont{
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+.secondCont h1{
+    margin: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+
+    text-decoration: none;
+
+    font-family: "Karla", serif;
+
+
+    color: #292929;
+    text-align: center;
+
+    line-height: 180%;
+
+    letter-spacing: 2px;
+    width: fit-content;
+}
+
+.secondCont h1 span{
+    font-size: 70px;
+    color: #ff5e4f;
+    text-shadow: 0px 0px 1px #494949;
+    font-family: "Karla", serif;
+}
+
+.secondCont h1 p{
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0px;
+    font-family: "Karla", serif;
+    font-weight: 400;
+
+    width: 60vw;
+
+    margin: auto;
+}
+
+@media (max-width: 800px){
+    .secondCont h1 p{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 420px){
+    .secondCont{
+        width: 95%;
+    }
+    .secondCont h1{
+        font-size: 26px;
+    }
+
+    .secondCont h1 p{
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+/* #endregion */
+
+/* #region THIRD  */
+
+.third{
+    width: 100%;
+    margin: 50px 0;
+    margin-bottom: 10vh;
+}
+
+.thirdCont{
+    width: fit-content;
+    display: flex;
+    /* justify-content: ; */
+
+    margin: auto;
+}
+
+.thirdCont2{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card2, .card1, .card3, .card4{
+    width: 500px;
+    height: 350px;
+    max-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    margin: 20px;
+}
+
+.card1{
+    width: fit-content;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1 img{
+    display: block;
+    max-width: 500px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+}
+
+.card2, .card1{
+    width: fit-content;
+    margin: 0;
+    max-width: 560px;
+    padding-top: 0; 
+}
+.card2 h1, .card3 h1, .card4 h1, .card1 h1{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+
+    text-decoration: none;
+
+    font-family: "Karla", serif;
+
+
+    color: #292929;
+    text-align: left;
+
+    line-height: 100%;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 3%;
+}
+
+.card2 p, .card1 p{
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0px;
+    font-family: "Karla", serif;
+    font-weight: 400;
+
+    width: 100%;
+}
+.card2 p span, .card1 p span{
+    color: #000000;
+    font-weight: 600;
+    text-shadow: 0px 0px 1px #626262;
+    font-family: "Karla", serif;
+    font-size: 20px;
+}
+
+.card3, .card4{
+    border: #cccccc 2px solid;
+    border-radius: 5px;
+    box-shadow: #aeaeae 0 0 10px;
+    background-image: linear-gradient(to right bottom, #f2f2f2 0%, #eaeaea 100%);
+
+    height: 300px;
+}
+
+
+.card3 h1, .card4 h1{
+    font-size: 30px;
+}
+
+.card1{
+    border-right: #aaaaaa 2px solid;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+
+
+.card1 p, .card2 p, .card3 p, .card4 p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Karla", serif;
+}
+
+
+
+.card3 p, .card4 p{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.card3 span{
+    color: #a1ba8e;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.card4 span{
+    color: #ff5e4f;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1100px){
+    .thirdCont{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .card1{
+        border: none;
+        border-top: #aaaaaa 2px solid;
+        padding-top: 20px;
+        height: fit-content;
+    }
+
+    .card1 img{
+        max-height: 500px;
+    }
+
+    .card2{
+        margin-bottom: 10px;
+    }
+
+    .thirdCont2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 560px){
+
+    .third{
+        margin-top: 70px;
+    }
+
+    .card2, .card1{
+        width: 90%;
+        margin: auto;
+        height: 100%;
+        padding: 20px 0;
+        max-height: max-content;
+    }
+
+    .card1{
+        width: 90%;
+        margin: auto;
+    }
+
+    .card1 img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .card3, .card4{
+        width: 90%;
+        margin: 20px auto;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 380px){
+    .card1 h1, .card2 h1{
+        font-size: 30px;
+    }
+}
+
+/* #endregion */
+
+
+.row1, .row2{
+    display: flex;
+    min-height: 100vh;
+}
+
+.row1{
+    background-color: #a1ba8e;
+}
+
+.row2{
+    background-color: #eeeeee;
+}
+
+.img{
+    width: 50%;
+    margin: 40px 0;
+}
+
+.rowText{
+    width: 45%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.img img{
+    max-width: 80%;
+    width: auto;
+    max-height: 80vh;
+    height: auto;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.rowText p{
+    font-weight: 400;
+
+    font-size: 25px;
+
+    letter-spacing: 1px;
+    line-height: 120%;
+    width: 80%;
+    margin: auto;
+
+    font-family: "Karla", serif;
+
+}
+
+
+
+@media (max-width: 1000px){
+    .rowText p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .img img{
+        visibility: hidden;
+    }
+
+    .img{
+        position: absolute;
+    }
+
+    .row1, .row2{
+        width: 100%;
+    }
+
+    .rowText{
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+
