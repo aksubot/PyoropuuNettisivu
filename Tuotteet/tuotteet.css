@@ -331,13 +331,37 @@ body{
     }*/
 }
 
+.dropdowns{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.dropdownsCont{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    justify-content: center;
+    margin: auto;
+}
+
 .hinnat{
-    text-align: center;
+    margin-right: 30px;
+}
+
+.kt{
+    margin-left: 30px;
+}
+
+@media (max-width: 680px){
+    .hinnat, .kt{
+        margin: 0;
+        width: 100%;
+    }
 }
 
 /* #region DROPDOWN */
 
-.dropdown{
+.Hdropdown, .Kdropdown{
     border: transparent;
     background-color: transparent;
     text-transform: uppercase;
@@ -357,6 +381,13 @@ body{
 
     margin: 20px 0;
 
+}
+
+@media (max-width: 360px){
+    .Hdropdown, .Kdropdown{
+        font-size: 25px;
+    
+    }
 }
 
 .btn{
@@ -380,6 +411,24 @@ body{
     
 
     margin-left: 8px;
+}
+
+/* #endregion */
+
+/* #region KT CONT */
+
+.ktCont{
+    flex-wrap: wrap;
+}
+
+.ktCont img{
+    width: auto;
+    height: auto;
+    
+    max-width: 70%;
+    max-height: 50vh;
+
+    margin: 20px auto;
 }
 
 /* #endregion */
@@ -448,12 +497,16 @@ p{
 
 /* #endregion */
 
-.hinnatCont3, .hinnatCont2{
+.hinnatCont3, .hinnatCont2, .ktCont{
     display: none ;
 }
 
-.dropdown-active{
+.hinnatCont2.dropdown-active, .hinnatCont3.dropdown-active{
     display: grid;
+}
+
+.ktCont.dropdown-active{
+    display: flex;
 }
 
 @media (max-width: 1050px){
