@@ -32,7 +32,7 @@
 
 /* preload */
 body::before {
-    content: url('./pictures/AutotalliValmis.webp');
+    content: url('./pictures/AutotalliValmis-min.jpg');
     display: none;
 }
 
