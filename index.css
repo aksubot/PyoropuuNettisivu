@@ -30,6 +30,12 @@
 }
 /* #endregion */
 
+/* preload */
+body::before {
+    content: url('./pictures/AutotalliValmis.webp');
+    display: none;
+}
+
 body{
     overflow-x: hidden;
     overflow-x: clip !important;    
