@@ -12,9 +12,6 @@ html{
     scroll-padding: 15vh;
 }
 
-/* https://coolors.co/272727-4c404f-9bc995-157a6e-57c4e5 */
-
-/* https://coolors.co/272727-eb5e28-53dd6c-ffffff-57c4e5 parempi*/
 
 /* https://coolors.co/323b2d-80986c-a1ba8e-e1e1e1-ffffff nykyinen */
 
@@ -89,33 +86,10 @@ body{
     align-items: center;
 }
 
-.first h1{
-    text-align: center;
-
-
-    font-weight: 600;
-    font-style: normal;
-    font-size: 70px;
-
-    text-decoration: none;
-
-    font-family: "Karla", serif;
-
-
-    color: #292929;
-
-    margin: 30px 0;
-
-    text-shadow: 0px 0px 2px #9f9f9f;
-
-    width: 100%;
-}
-
 .first hr{
     width: 75%;
     margin: auto;
     margin-bottom: 30px;
-    /* color: #000000; */
 }
 
 .btns{
@@ -125,11 +99,6 @@ body{
     height: fit-content;
     flex-direction: column;
 
-    /* padding: 30px 20px;
-    box-shadow: #aeaeae 0 0 10px;
-    background-image: linear-gradient(to right bottom, #fff 0%, #ffffff 100%);
-    border-radius: 5px;
-    border: #cccccc 2px solid; */
 
     margin: 0;
 }
@@ -245,14 +214,6 @@ body{
 
 }
 
-.text p{
-    font-family: "Karla", serif;
-    line-height: 1.7rem;
-    letter-spacing: 0.7px;
-    font-weight: 400;
-    font-size: 18px;
-}
-
 /* #endregion */
 
 .itemContSwitch{
@@ -265,36 +226,12 @@ body{
     height: fit-content;
 
 
-    /* border: #a1ba8e 3px solid;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: #aeaeae 0 0 8px;
-    background-image: linear-gradient(to right bottom, #fff 0%, #ffffff 100%); */
-
     margin: 40px;
 
     flex-wrap: nowrap;
 }
 
-/* @keyframes scrollScale{
-    0%{
-        scale: 0.9;
-    }
 
-    50%{
-        scale: 1;
-    }
-
-    100%{
-        scale: 0.9;
-    }
-} */
-
-.item{
-    animation: scrollScale linear;
-    animation-timeline: view();
-}
 
 
 
@@ -324,11 +261,6 @@ body{
         flex-wrap: wrap;
     }
 
-    /*.itemContSwitch, .itemContNoSwitch{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px;
-    }*/
 }
 
 .dropdowns{
@@ -464,7 +396,6 @@ hr{
 }
 
 .card{
-    /* border: #a1ba8e 3px solid; */
     border: #cccccc 2px solid;
     border-radius: 5px;
     margin: 20px;
@@ -485,7 +416,6 @@ p{
     margin: 3px 0;
     
 
-    /* font-family: "Karla", serif; */
 }
 
 .flip{
