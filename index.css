@@ -233,7 +233,13 @@ body{
     }
 }
 
-@media (max-width: 520px){
+@media (max-width: 660px){
+    .secondCont h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:440px){
     .secondCont h1{
         font-size: 30px;
     }

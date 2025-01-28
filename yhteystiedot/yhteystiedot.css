@@ -102,6 +102,8 @@ body{
     background-image: linear-gradient(to right bottom, #eee 0%, #ffffff 100%);
 
     min-width: 362px;
+
+    min-height: 150px;
 }
 
 .card3{

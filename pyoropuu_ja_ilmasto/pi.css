@@ -251,16 +251,6 @@ body{
         flex-direction: column;
     }
 
-    
-    /* .firstCont .text{
-        padding: 0px 10px;
-        margin: 3vw;
-        width: 100%;
-        height: fit-content;
-        text-align: center;
-        margin-bottom: 40px;
-        max-width: 100%;
-    } */
 
     .firstImg{
         width: 100%;
@@ -291,10 +281,6 @@ body{
     }
 }
 
-@media (max-width: 700px){
-    
-}
-
 @media (max-width: 620px){
     .roundCorners{
         width: 90%;
@@ -310,85 +296,6 @@ body{
 
 }
 
-/* @media (min-width: 1330px){
-    .firstCont .text{
-        padding-left: 20%;
-    }
-} */
-
-/*#endregion*/
-
-/* #region SECOND */
-
-.second{
-    width: 100%;
-}
-
-.secondCont{
-    display: flex;
-    margin: auto;
-    width: 90%;
-}
-
-.secondCont h1{
-    margin: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 40px;
-
-    text-decoration: none;
-
-    font-family: "Karla", serif;
-
-
-    color: #292929;
-    text-align: center;
-
-    line-height: 180%;
-
-    letter-spacing: 2px;
-    width: fit-content;
-}
-
-.secondCont h1 span{
-    font-size: 70px;
-    color: #ff5e4f;
-    text-shadow: 0px 0px 1px #494949;
-    font-family: "Karla", serif;
-}
-
-.secondCont h1 p{
-    font-size: 23px;
-    font-weight: 500;
-    line-height: 130%;
-    letter-spacing: 0px;
-    font-family: "Karla", serif;
-    font-weight: 400;
-
-    width: 60vw;
-
-    margin: auto;
-}
-
-@media (max-width: 800px){
-    .secondCont h1 p{
-        width: 80vw;
-    }
-}
-
-@media (max-width: 420px){
-    .secondCont{
-        width: 95%;
-    }
-    .secondCont h1{
-        font-size: 26px;
-    }
-
-    .secondCont h1 p{
-        font-size: 20px;
-        width: 100%;
-    }
-}
 
 /* #endregion */
 
@@ -415,20 +322,8 @@ body{
     justify-content: space-between;
 }
 
-.card2, .card1, .card3, .card4{
-    width: 500px;
-    height: 350px;
-    max-height: 350px;
-
-    display: flex;
-    flex-direction: column;
-
-    padding: 20px;
-    margin: 20px;
-}
-
 .card1{
-    width: fit-content;
+    width: 50%;
     height: 350px;
     display: flex;
     align-items: center;
@@ -447,9 +342,18 @@ body{
     width: fit-content;
     margin: 0;
     max-width: 560px;
+
+    height: 350px;
+    max-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
     padding-top: 0; 
 }
-.card2 h1, .card3 h1, .card4 h1, .card1 h1{
+.card2 h1, .card1 h1{
     font-weight: 600;
     font-style: normal;
     font-size: 40px;
@@ -487,29 +391,13 @@ body{
     font-size: 20px;
 }
 
-.card3, .card4{
-    border: #cccccc 2px solid;
-    border-radius: 5px;
-    box-shadow: #aeaeae 0 0 10px;
-    background-image: linear-gradient(to right bottom, #f2f2f2 0%, #eaeaea 100%);
-
-    height: 300px;
-}
-
-
-.card3 h1, .card4 h1{
-    font-size: 30px;
-}
-
 .card1{
     border-right: #aaaaaa 2px solid;
     margin: 0;
     justify-content: flex-start;
 }
 
-
-
-.card1 p, .card2 p, .card3 p, .card4 p{
+.card1 p, .card2 p{
     font-size: 20px;
     font-weight: 400;
     font-family: "Karla", serif;
@@ -517,22 +405,7 @@ body{
 
 
 
-.card3 p, .card4 p{
-    margin-left: 10px;
-    margin-top: 5px;
-}
 
-.card3 span{
-    color: #a1ba8e;
-    font-weight: 500;
-    font-size: 45px;
-}
-
-.card4 span{
-    color: #ff5e4f;
-    font-weight: 500;
-    font-size: 45px;
-}
 
 .line{
     display: flex;
@@ -590,11 +463,6 @@ body{
         margin: auto;
     }
 
-    .card3, .card4{
-        width: 90%;
-        margin: 20px auto;
-        height: fit-content;
-    }
 }
 
 @media (max-width: 380px){
@@ -605,84 +473,4 @@ body{
 
 /* #endregion */
 
-
-.row1, .row2{
-    display: flex;
-    min-height: 100vh;
-}
-
-.row1{
-    background-color: #a1ba8e;
-}
-
-.row2{
-    background-color: #eeeeee;
-}
-
-.img{
-    width: 50%;
-    margin: 40px 0;
-}
-
-.rowText{
-    width: 45%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.img img{
-    max-width: 80%;
-    width: auto;
-    max-height: 80vh;
-    height: auto;
-    margin: auto;
-    display: block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    
-}
-
-.rowText p{
-    font-weight: 400;
-
-    font-size: 25px;
-
-    letter-spacing: 1px;
-    line-height: 120%;
-    width: 80%;
-    margin: auto;
-
-    font-family: "Karla", serif;
-
-}
-
-
-
-@media (max-width: 1000px){
-    .rowText p{
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 680px) {
-    .img img{
-        visibility: hidden;
-    }
-
-    .img{
-        position: absolute;
-    }
-
-    .row1, .row2{
-        width: 100%;
-    }
-
-    .rowText{
-        width: 70%;
-        margin: 20px auto;
-    }
-}
 
