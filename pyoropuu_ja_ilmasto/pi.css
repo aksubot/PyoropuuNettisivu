@@ -307,6 +307,13 @@ body{
     margin-bottom: 10vh;
 }
 
+@media screen {
+    .third{
+        margin-bottom: 2vh;
+    }
+
+}
+
 .thirdCont{
     width: fit-content;
     display: flex;
@@ -382,6 +389,8 @@ body{
     font-weight: 400;
 
     width: 100%;
+
+    text-wrap: balance;
 }
 .card2 p span, .card1 p span{
     color: #000000;

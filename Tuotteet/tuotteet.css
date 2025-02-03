@@ -128,9 +128,10 @@ body{
     width: 100%;
     align-items: center;
     justify-content: center;
+
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1540px){
     .btnsCont{
         flex-wrap: wrap;
     }
@@ -491,8 +492,4 @@ p{
     p{
         font-size: small;
     }
-
-     .img img{
-        width: 100%;
-     }
 }
