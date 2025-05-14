@@ -19,9 +19,9 @@
 
 .hidden{
     opacity: 0;
-    transform: translateX(-10%);
+    transform: translateX(-5vw);
     filter: blur(5px);
-    transition: opacity 0.3s, transform 0.3s, filter 0.5s;
+    transition: opacity 0.2s, transform 0.2s, filter 0.3s;
 }
 .show{
     opacity: 1;
@@ -83,17 +83,17 @@ body{
 
 
 .secondCont h1{
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
-    font-size: 60px;
+    font-size: 50px;
 
     text-decoration: none;
 
-    font-family: "Karla", serif;
+    font-family: "Libre Franklin", sans-serif;
 
     color: #292929;
 
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .img img{
@@ -120,7 +120,7 @@ body{
 .sectionCont .btn1, .sectionCont .btn2{
     width: 100%;
     height: 15vh;
-    font-family: "Karla", serif;
+    font-family: "DM Sans", sans-serif;
 
 
     text-transform: uppercase;
@@ -135,7 +135,7 @@ body{
     color: #ffffff;
     border: transparent;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     letter-spacing: 1px;
     display: inline-block;  
@@ -172,10 +172,10 @@ body{
     color: #000000;
     text-align: left;
     margin: 20px 0;
-    line-height: 23px;
-    font-family: "Karla", serif;
+    line-height: 22px;
+    font-family: "Libre Franklin", sans-serif;
 
-    font-size: larger;
+    font-size: 19px;
 }
 
 @media screen and (max-width: 1380px){
