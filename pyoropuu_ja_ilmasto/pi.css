@@ -399,8 +399,6 @@ body{
     }
 
     .card1{
-        border: none;
-        border-top: #aaaaaa 2px solid;
         padding-top: 20px;
         height: fit-content;
     }
