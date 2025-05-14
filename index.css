@@ -136,7 +136,7 @@ body{
     border: transparent;
     border-radius: 5px;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 1px;
     display: inline-block;  
     text-decoration: none;
@@ -172,9 +172,9 @@ body{
     color: #000000;
     text-align: left;
     margin: 20px 0;
-    line-height: 22px;
     font-family: "Libre Franklin", sans-serif;
 
+    font-weight: 400;
     font-size: 19px;
 }
 

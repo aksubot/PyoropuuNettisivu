@@ -103,24 +103,6 @@ body{
     margin: 0;
 }
 
-.btns h2{
-    font-weight: 600;
-    font-style: normal;
-    font-size: 40px;
-
-    text-decoration: none;
-
-    font-family: "Karla", serif;
-
-
-    color: #292929;
-
-    margin: 20px 0;
-    margin-bottom: 30px;
-
-    text-align: center;
-}
-
 .btnsCont{
     display: flex;
 
@@ -145,7 +127,7 @@ body{
     transition: padding 0.2s ease;
     width: fit-content;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
     display: inline-block;
@@ -156,7 +138,7 @@ body{
 
     transition: transform 0.2s ease;
 
-    font-family: "Karla", serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 .btns button:hover{
@@ -202,16 +184,18 @@ body{
 .text h2{
     margin: 10px 0;
 
-    font-family: "Karla", serif;
-    font-weight: 600;
-    font-style: bold;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 500;
+    
 
-    font-size: max(inherit, 100%, 50vw);
+    font-size: max(26px);
 
 
     color: #a1ba8e;
 
     width: 100%;
+
+    letter-spacing: 1px;
 
 }
 
@@ -409,8 +393,9 @@ h3{
     margin: 0 5px;
     font-size: large;
     word-break: break-word;
+    font-weight: 500;
 
-    font-family: "Karla", serif;
+    font-family: "Libre Franklin", serif;
 }
 
 p{
@@ -459,7 +444,7 @@ p{
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 623px){
     h3{
         margin: 0;
         font-size: medium;

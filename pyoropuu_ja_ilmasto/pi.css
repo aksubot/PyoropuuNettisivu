@@ -76,20 +76,6 @@ body{
     margin-top: 100px;
 }
 
-.first h1{
-    font-weight: 600;
-    font-style: normal;
-    font-size: 75px;
-
-    text-decoration: none;
-
-    font-family: "Karla", serif;
-
-
-    color: #292929;
-    text-align: center;
-}
-
 .firstCont{
     display: flex;
     min-height: 80vh;
@@ -127,13 +113,13 @@ body{
 
 .textCont h1{
 
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
-    font-size: 60px;
+    font-size: 55px;
 
     text-decoration: none;
 
-    font-family: "Karla", serif;
+    font-family: "Libre Franklin", serif;
 
 
     color: #292929;
@@ -148,7 +134,7 @@ body{
     text-align: left;
     margin: 20px 0;
     line-height: 23px;
-    font-family: "Karla", serif;
+    font-family: "Libre Franklin", serif;
     font-size: 23px;
 }
 
@@ -199,11 +185,15 @@ body{
 }
 
 
-
+@media(max-width:1052px){
+    .textCont p{
+        font-size: 20px;
+    }
+}
 
 @media(max-width:1060px){
     .textCont h1{
-        font-size: 55px;
+        /* font-size: 10px; */
     }
 }
 
@@ -236,11 +226,6 @@ body{
         margin: 40px auto;
         max-width: max-content;
     }
-    .textCont h1{
-        font-size: 40px;
-        text-align: center;
-        width: 100%;
-    }
 
     .text p{
         text-align: center;
@@ -268,14 +253,16 @@ body{
     }
     
     .textCont h1{
-        font-size: 60px;
+        font-size: 50px;
         margin-bottom: 10px;
         margin-top: 20px;
         line-height: 60px;
+        width: 100%;
+        text-align: center;
     }
     
     .firstCont .text .textCont p{
-        font-size: 15px;
+        font-size: 21px;
         text-align: center;
         line-height: 25px;
     }
@@ -303,8 +290,8 @@ body{
 
 .third{
     width: 100%;
-    margin: 50px 0;
-    margin-bottom: 10vh;
+    margin: 20vh 0;
+    padding-bottom: 20vh;
 }
 
 @media screen {
@@ -315,7 +302,7 @@ body{
 }
 
 .thirdCont{
-    width: fit-content;
+    width: 80%;
     display: flex;
     /* justify-content: ; */
 
@@ -337,21 +324,13 @@ body{
     justify-content: center;
 }
 
-.card1 img{
-    display: block;
-    max-width: 500px;
-    max-height: 350px;
-    width: auto;
-    height: auto;
-}
 
 .card2, .card1{
-    width: fit-content;
+    width: 50%;
     margin: 0;
-    max-width: 560px;
+    max-width: 600px;
 
     height: 350px;
-    max-height: 350px;
 
     display: flex;
     flex-direction: column;
@@ -361,13 +340,13 @@ body{
     padding-top: 0; 
 }
 .card2 h1, .card1 h1{
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-size: 40px;
 
     text-decoration: none;
 
-    font-family: "Karla", serif;
+    font-family: "Libre Franklin", serif;
 
 
     color: #292929;
@@ -381,11 +360,11 @@ body{
 }
 
 .card2 p, .card1 p{
-    font-size: 23px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 130%;
     letter-spacing: 0px;
-    font-family: "Karla", serif;
+    font-family: "Libre Franklin", serif;
     font-weight: 400;
 
     width: 100%;
@@ -396,20 +375,14 @@ body{
     color: #000000;
     font-weight: 600;
     text-shadow: 0px 0px 1px #626262;
-    font-family: "Karla", serif;
+    font-family: "Libre Franklin", serif;
     font-size: 20px;
 }
 
 .card1{
-    border-right: #aaaaaa 2px solid;
     margin: 0;
     justify-content: flex-start;
-}
 
-.card1 p, .card2 p{
-    font-size: 20px;
-    font-weight: 400;
-    font-family: "Karla", serif;
 }
 
 
@@ -422,6 +395,10 @@ body{
 }
 
 @media (max-width: 1100px){
+
+    .third{
+        padding-bottom: 5vh;
+    }
     .thirdCont{
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -434,12 +411,13 @@ body{
         height: fit-content;
     }
 
-    .card1 img{
-        max-height: 500px;
-    }
-
     .card2{
         margin-bottom: 10px;
+    }
+
+    .card1, .card2{
+        width: 100%;
+        margin: auto;
     }
 
     .thirdCont2{
@@ -448,7 +426,7 @@ body{
     }
 }
 
-@media (max-width: 560px){
+@media (max-width: 700px){
 
     .third{
         margin-top: 70px;
@@ -459,7 +437,6 @@ body{
         margin: auto;
         height: 100%;
         padding: 20px 0;
-        max-height: max-content;
     }
 
     .card1{
