@@ -60,7 +60,9 @@
     height: inherit;
     padding: 10px 0;
 
-    font-family: "Karla", serif;
+    font-weight: 550;
+
+    font-family: "Libre Franklin", sans-serif;
 }
 
 .fa-gem{
@@ -91,10 +93,10 @@
     align-items: center;
     height: 100%;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 1px;
 
-    font-family: "Karla", serif;
+    font-family: "Libre Franklin", sans-serif;
 }
 .navbar__btn{
     display: flex;
