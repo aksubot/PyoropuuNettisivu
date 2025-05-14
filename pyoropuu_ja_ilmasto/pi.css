@@ -191,12 +191,6 @@ body{
     }
 }
 
-@media(max-width:1060px){
-    .textCont h1{
-        /* font-size: 10px; */
-    }
-}
-
 @media (max-width: 960px) {
 
     .first{
