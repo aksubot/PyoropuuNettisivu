@@ -296,7 +296,7 @@ body{
 }
 
 .thirdCont{
-    width: 80%;
+    width: 90%;
     display: flex;
     /* justify-content: ; */
 
@@ -307,7 +307,7 @@ body{
     width: fit-content;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .card1{
@@ -315,14 +315,14 @@ body{
     height: 350px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin: 0;
+    justify-content: flex-start;
 }
 
 
 .card2, .card1{
     width: 50%;
     margin: 0;
-    max-width: 600px;
 
     height: 350px;
 
@@ -332,6 +332,8 @@ body{
     padding: 20px;
 
     padding-top: 0; 
+
+    text-align: center;
 }
 .card2 h1, .card1 h1{
     font-weight: 500;
@@ -351,6 +353,8 @@ body{
     letter-spacing: 2px;
 
     margin-bottom: 3%;
+
+    text-align: center;
 }
 
 .card2 p, .card1 p{
@@ -362,8 +366,6 @@ body{
     font-weight: 400;
 
     width: 100%;
-
-    text-wrap: balance;
 }
 .card2 p span, .card1 p span{
     color: #000000;
@@ -373,11 +375,6 @@ body{
     font-size: 20px;
 }
 
-.card1{
-    margin: 0;
-    justify-content: flex-start;
-
-}
 
 
 
