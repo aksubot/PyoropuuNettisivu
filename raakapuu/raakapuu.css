@@ -82,7 +82,7 @@ body{
 }
 
 
-.secondCont h1{
+.secondCont h1, .thirdCont h1{
     font-weight: 500;
     font-style: normal;
     font-size: 50px;
@@ -97,19 +97,6 @@ body{
 
     text-align: center;
 }
-
-.img img{
-    display: none;
-}
-
-.img{
-    background-image:  url("./pictures/AutotalliValmis-min.jpg");
-    width: 100%;
-    height: 50vh;
-    background-size: cover;
-    background-position: 50% 60%;
-    border-radius: 10px;
-}
     
 .sectionCont{
     display: flex;
@@ -119,51 +106,6 @@ body{
     margin: 20px 0;
 }
 
-.sectionCont .btn1, .sectionCont .btn2{
-    width: 100%;
-    height: 15vh;
-    font-family: "DM Sans", sans-serif;
-
-
-    text-transform: uppercase;
-
-    cursor: pointer;
-
-    max-width: inherit;
-
-    margin: 0;
-
-    background-color: #8fb96e;
-    color: #ffffff;
-    border: transparent;
-    border-radius: 5px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    display: inline-block;  
-    text-decoration: none;
-
-    transition: transform 0.2s ease;
-}
-
-.sectionCont .btn1:hover, .sectionCont .btn2:hover{
-    transform: translateY(-5px);
-}
-
-.sectionCont .btn2, .sectionCont .btn1{
-    color: #fff;
-    background-color: #8fb96e;
-}
-
-.sectionCont a{
-    width: 100%;
-    max-width: 600px;
-    margin: 40px unset;
-}
-
-.secondLink1{
-    margin-right: 30px;
-}
 
 
 .box p{
@@ -178,37 +120,14 @@ body{
     width: 100%;
 }
 
-@media (max-width: 660px){
-    .secondCont h1{
-        font-size: 40px;
-    }
-}
-
-@media (max-width:550px){
-    .sectionCont h1, .thirdCont h1{
-        font-size: 30px !important;
+@media (max-width:700px){
+    .secondCont h1, .thirdCont h1{
+        font-size: 35px !important;
     }
 
     .thirdCont, .secondCont{
         width: 90% !important;
     }
-}
-
-
-.thirdCont h1{
-    font-weight: 500;
-    font-style: normal;
-    font-size: 42px;
-
-    text-decoration: none;
-
-    font-family: "Libre Franklin", sans-serif;
-
-    color: #292929;
-
-    margin: 40px 0;
-
-    text-align: center;
 }
 
 
