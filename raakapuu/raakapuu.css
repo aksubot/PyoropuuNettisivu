@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', Helvetica, Arial, sans-serif;
+
+    overflow-y:initial;
+}
+
+/* https://coolors.co/272727-4c404f-9bc995-157a6e-57c4e5 */
+
+/* https://coolors.co/272727-eb5e28-53dd6c-ffffff-57c4e5 parempi*/
+
+/* https://coolors.co/323b2d-80986c-a1ba8e-e1e1e1-ffffff nykyinen */
+
+/*kopioi metsuri nettisivu !!!!!!!!!!!!!!!!!!! */
+
+/*#region HIDDEN AND SHOW  */
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-5vw);
+    filter: blur(5px);
+    transition: opacity 0.2s, transform 0.2s, filter 0.3s;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0px);
+    filter: blur(0px);
+}
+/* #endregion */
+
+/* preload */
+body::before {
+    content: url('../pictures/AutotalliValmis-min.jpg');
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-x: clip !important;    
+    background-color: #b9dda1;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: #000000;
+    color: #333333;
+    top: 0;
+    left: -100vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+    display: flex;
+
+    padding-top: 200px;
+
+    cursor: pointer;
+
+    display: none;
+}
+
+.overlay-is-active{
+    opacity: 0.3;
+    visibility: visible;
+
+    display: block;
+}
+
+
+
+.second{
+    margin-top: 120px;
+}
+
+.secondCont{
+    width: 70%;
+    margin: auto;
+}
+
+
+.secondCont h1{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+
+    text-decoration: none;
+
+    font-family: "Libre Franklin", sans-serif;
+
+    color: #292929;
+
+    margin: 40px 0;
+
+    text-align: center;
+}
+
+.img img{
+    display: none;
+}
+
+.img{
+    background-image:  url("./pictures/AutotalliValmis-min.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: 50% 60%;
+    border-radius: 10px;
+}
+    
+.sectionCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 20px 0;
+}
+
+.sectionCont .btn1, .sectionCont .btn2{
+    width: 100%;
+    height: 15vh;
+    font-family: "DM Sans", sans-serif;
+
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    max-width: inherit;
+
+    margin: 0;
+
+    background-color: #8fb96e;
+    color: #ffffff;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;  
+    text-decoration: none;
+
+    transition: transform 0.2s ease;
+}
+
+.sectionCont .btn1:hover, .sectionCont .btn2:hover{
+    transform: translateY(-5px);
+}
+
+.sectionCont .btn2, .sectionCont .btn1{
+    color: #fff;
+    background-color: #8fb96e;
+}
+
+.sectionCont a{
+    width: 100%;
+    max-width: 600px;
+    margin: 40px unset;
+}
+
+.secondLink1{
+    margin-right: 30px;
+}
+
+.box{
+    min-width: 600px;
+}
+
+.box p{
+    color: #000000;
+    text-align: left;
+    margin: 20px 0;
+    font-family: "Libre Franklin", sans-serif;
+
+    font-weight: 400;
+    font-size: 21px;
+
+    margin: auto;
+}
+
+@media screen and (max-width: 1380px){
+    .sectionCont{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .sectionCont .btn1, .sectionCont .btn2{
+        width: 100%;
+    }
+
+    .box{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .box p{
+        width: 80vw;
+        max-width: none;
+    }
+
+    .sectionCont a{
+        margin: 20px 0;
+        width: 45%;
+    }
+
+    .sectionCont {
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px){
+    .sectionCont{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .box{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .box p{
+        width: 80vw;
+        max-width: none;
+    }
+
+    .sectionCont a{
+        width: 100%;
+    }
+
+    .sectionCont {
+        text-align: center;
+    }
+}
+
+@media (max-width: 660px){
+    .secondCont h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:440px){
+    .secondCont h1{
+        font-size: 30px;
+    }
+}
+
+.thirdCont h1{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 42px;
+
+    text-decoration: none;
+
+    font-family: "Libre Franklin", sans-serif;
+
+    color: #292929;
+
+    margin: 10px 0;
+
+    text-align: center;
+}
+
+
+.card3{
+    border: #cccccc 2px solid;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: #aeaeae 0 0 10px;
+    background-image: linear-gradient(to right bottom, #eee 0%, #ffffff 100%);
+
+    min-width: 362px;
+
+    min-height: 150px;
+}
+
+.row1, .row2, .row3, .row4{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    text-align: left;
+}
+i{
+    margin: 20px 0;
+    font-size: 25px;
+    color: #323b2d;
+    width: 20px;
+}
+
+.thirdCont p{
+    font-size: clamp(0.5rem, 5vw, 1.25rem);
+
+    font-family: "Libre Franklin", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-left: 20px;
+
+    color: #80986c;
+
+    /* text-shadow: 0px 0px 1px #e3e3e3; */
+}
+
+@media (max-width: 520px){
+    .thirdCont{
+        width: 90%;
+    }
+
+    .card3{
+        min-width: 0px;
+        margin: 20px 0;
+    }
+
+    i{
+        margin: 10px 0;
+    }
+}
+
+.thirdCont{
+    width: 70%;
+    margin: auto;
+    height: fit-content;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}

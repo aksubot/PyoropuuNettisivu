@@ -310,17 +310,8 @@ body{
     justify-content: space-around;
 }
 
-.card1{
-    width: 50%;
-    height: 350px;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    justify-content: flex-start;
-}
 
-
-.card2, .card1{
+.card2{
     width: 50%;
     margin: 0;
 
@@ -334,30 +325,11 @@ body{
     padding-top: 0; 
 
     text-align: center;
-}
-.card2 h1, .card1 h1{
-    font-weight: 500;
-    font-style: normal;
-    font-size: 40px;
 
-    text-decoration: none;
-
-    font-family: "Libre Franklin", serif;
-
-
-    color: #292929;
-    text-align: left;
-
-    line-height: 100%;
-
-    letter-spacing: 2px;
-
-    margin-bottom: 3%;
-
-    text-align: center;
+    margin: auto;
 }
 
-.card2 p, .card1 p{
+.card2 p{
     font-size: 20px;
     font-weight: 400;
     line-height: 130%;
@@ -366,13 +338,6 @@ body{
     font-weight: 400;
 
     width: 100%;
-}
-.card2 p span, .card1 p span{
-    color: #000000;
-    font-weight: 600;
-    text-shadow: 0px 0px 1px #626262;
-    font-family: "Libre Franklin", serif;
-    font-size: 20px;
 }
 
 
@@ -395,16 +360,12 @@ body{
         flex-direction: column-reverse;
     }
 
-    .card1{
-        padding-top: 20px;
-        height: fit-content;
-    }
 
     .card2{
         margin-bottom: 10px;
     }
 
-    .card1, .card2{
+    .card2{
         width: 100%;
         margin: auto;
     }
@@ -421,29 +382,13 @@ body{
         margin-top: 70px;
     }
 
-    .card2, .card1{
+    .card2{
         width: 90%;
         margin: auto;
         height: 100%;
         padding: 20px 0;
     }
 
-    .card1{
-        width: 90%;
-        margin: auto;
-    }
-
-    .card1 img{
-        width: 100%;
-        margin: auto;
-    }
-
-}
-
-@media (max-width: 380px){
-    .card1 h1, .card2 h1{
-        font-size: 30px;
-    }
 }
 
 /* #endregion */
