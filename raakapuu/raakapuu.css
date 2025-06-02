@@ -165,75 +165,17 @@ body{
     margin-right: 30px;
 }
 
-.box{
-    min-width: 600px;
-}
 
 .box p{
     color: #000000;
-    text-align: left;
+    text-align: balance;
     margin: 20px 0;
     font-family: "Libre Franklin", sans-serif;
 
     font-weight: 400;
     font-size: 21px;
 
-    margin: auto;
-}
-
-@media screen and (max-width: 1380px){
-    .sectionCont{
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .sectionCont .btn1, .sectionCont .btn2{
-        width: 100%;
-    }
-
-    .box{
-        width: 100%;
-        justify-content: center;
-    }
-
-    .box p{
-        width: 80vw;
-        max-width: none;
-    }
-
-    .sectionCont a{
-        margin: 20px 0;
-        width: 45%;
-    }
-
-    .sectionCont {
-        text-align: center;
-    }
-}
-
-@media (max-width: 700px){
-    .sectionCont{
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .box{
-        width: 100%;
-        justify-content: center;
-    }
-
-    .box p{
-        width: 80vw;
-        max-width: none;
-    }
-
-    .sectionCont a{
-        width: 100%;
-    }
-
-    .sectionCont {
-        text-align: center;
-    }
+    width: 100%;
 }
 
 @media (max-width: 660px){
@@ -242,11 +184,16 @@ body{
     }
 }
 
-@media (max-width:440px){
-    .secondCont h1{
-        font-size: 30px;
+@media (max-width:550px){
+    .sectionCont h1, .thirdCont h1{
+        font-size: 30px !important;
+    }
+
+    .thirdCont, .secondCont{
+        width: 90% !important;
     }
 }
+
 
 .thirdCont h1{
     font-weight: 500;
@@ -259,7 +206,7 @@ body{
 
     color: #292929;
 
-    margin: 10px 0;
+    margin: 40px 0;
 
     text-align: center;
 }
